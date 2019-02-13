@@ -1,9 +1,6 @@
 <h1><%= @title %></h1>
 <p><%= @msg %></p>
 <%= form_tag(controller: 'helo', action: 'index') do %>
-    <%= radio_button_tag("r1", "radio 1") %>
-    <%= label_tag("r1_radio_1", "Radio Button 1") %><br>
-    <%= radio_button_tag("r1", "radio 2") %>
-    <%= label_tag("r1_radio_2", "Radio Button 2") %><br>
+    <%= select_tag("s1", options_for_select(["Windows", "MacOS", "Linux"])) %>
     <%= submit_tag("Click") %>
 <% end %>

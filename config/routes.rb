@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
 
-  get 'helo/index'
-  get 'helo', to: 'helo#index'
+  ### helo controller ###
+
+	get 'helo', to: 'helo#index'
+	get 'helo/index'
   get 'helo/other'
-  post 'helo', to: 'helo#index'
-  post 'helo/index'
+	post 'helo', to: 'helo#index'
+	post 'helo/index'
+
 
 end

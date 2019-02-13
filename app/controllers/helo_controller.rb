@@ -4,14 +4,14 @@ class HeloController < ApplicationController
 
       if request.post? then
         @title = 'Result'
-        if params['r1'] then
-          @msg = 'you selected: ' + params['r1']
+        if params['s1'] then
+          @msg = 'you selected: ' + params['s1']
         else
           @msg = 'not selected...'
         end
       else
         @title = 'Index'
-        @msg = 'selected radio button...'
+        @msg = 'select List...'
       end
 
   end
